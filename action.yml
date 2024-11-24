@@ -1,0 +1,33 @@
+name: 'OBS Data Sync Action'
+description: 'Sync files or folders to Huawei Cloud OBS using obsutils.'
+author: 'Nipun Sandeep'
+branding:
+  icon: 'upload-cloud'
+  color: 'red'
+
+inputs:
+  accessId:
+    description: 'Access ID for Huawei Cloud OBS'
+    required: true
+  secretKey:
+    description: 'Secret Key for Huawei Cloud OBS'
+    required: true
+  endPoint:
+    description: 'Endpoint for Huawei Cloud OBS' #(e.g., https://obs.your-region.myhuaweicloud.com)'
+    required: true
+  obsBucket:
+    description: 'OBS bucket path'  #(e.g., obs://your-bucket-name/)'
+    required: true
+  localPath:
+    description: 'Path to the local folder or file for synchronization'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    ACCESS_ID: ${{ inputs.accessId }}
+    SECRET_KEY: ${{ inputs.secretKey }}
+    END_POINT: ${{ inputs.endPoint }}
+    OBS_BUCKET: ${{ inputs.obsBucket }}
+    LOCAL_PATH: ${{ inputs.localPath }}
