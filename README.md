@@ -1,5 +1,5 @@
 
-# OBS Sync Action
+# Huawei Cloud OBS Sync Action
 
 ![GitHub Marketplace](https://img.shields.io/badge/Marketplace-OBS%20Sync-blue.svg?colorA=24292e&colorB=0366d6&style=flat-square)  
 Easily sync your local files or directories to **Huawei Cloud OBS** (Object Storage Service) directly from your GitHub Actions workflows.
@@ -35,7 +35,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Sync Data to Huawei OBS
-        uses: nippa-97/obs-sync-action@v1
+        uses: nippa-97/obs-sync-action@v1.0.0
         with:
           accessId: ${{ secrets.ACCESS_ID }}
           secretKey: ${{ secrets.SECRET_KEY }}
