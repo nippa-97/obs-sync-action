@@ -35,7 +35,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Sync Data to Huawei OBS
-        uses: nippa-97/obs-sync-action@v1.0.0
+        uses: nippa-97/obs-sync-action@v1.0.1
         with:
           accessId: ${{ secrets.ACCESS_ID }}
           secretKey: ${{ secrets.SECRET_KEY }}
