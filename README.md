@@ -50,9 +50,9 @@ jobs:
 
 | Name          | Description                                                   | Required | Example                                      |
 |---------------|---------------------------------------------------------------|----------|----------------------------------------------|
-| `accessId`    | Access ID for Huawei Cloud OBS.[`More info`](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html)                              | Yes      | `${{ secrets.ACCESS_ID }}`                  |
-| `secretKey`   | Secret Key for Huawei Cloud OBS.                              | Yes      | `${{ secrets.SECRET_KEY }}`                 |
-| `endPoint`    | Endpoint URL for Huawei Cloud OBS.                            | Yes      | `https://obs.ap-southeast-1.myhuaweicloud.com` |
+| `accessId`    | Access ID for Huawei Cloud OBS.[`More Info`](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html)                              | Yes      | `${{ secrets.ACCESS_ID }}`                  |
+| `secretKey`   | Secret Key for Huawei Cloud OBS. [`More Info`](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html)                              | Yes      | `${{ secrets.SECRET_KEY }}`                 |
+| `endPoint`    | Endpoint URL for Huawei Cloud OBS. [`More Info`](https://support.huaweicloud.com/intl/en-us/productdesc-obs/obs_03_0152.html)                           | Yes      | `https://obs.ap-southeast-1.myhuaweicloud.com` |
 | `obsBucket`   | OBS bucket name.                                              | Yes      | `my-bucket`                     |
 | `localPath`   | Local path to the directory or file to be synced.             | Yes      | `./directory or file for sync`                            |
 
