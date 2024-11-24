@@ -50,11 +50,11 @@ jobs:
 
 | Name          | Description                                                   | Required | Example                                      |
 |---------------|---------------------------------------------------------------|----------|----------------------------------------------|
-| `accessId`    | Access ID for Huawei Cloud OBS.                               | Yes      | `${{ secrets.ACCESS_ID }}`                  |
+| `accessId`    | Access ID for Huawei Cloud OBS.[`More info`](https://support.huaweicloud.com/intl/en-us/clientogw-obs/obs_03_0405.html)                              | Yes      | `${{ secrets.ACCESS_ID }}`                  |
 | `secretKey`   | Secret Key for Huawei Cloud OBS.                              | Yes      | `${{ secrets.SECRET_KEY }}`                 |
 | `endPoint`    | Endpoint URL for Huawei Cloud OBS.                            | Yes      | `https://obs.ap-southeast-1.myhuaweicloud.com` |
-| `obsBucket`   | OBS bucket name.                                              | Yes      | `bucket-name`                     |
-| `localPath`   | Local path to the directory or file to be synced.             | Yes      | `./data-to-sync`                            |
+| `obsBucket`   | OBS bucket name.                                              | Yes      | `my-bucket`                     |
+| `localPath`   | Local path to the directory or file to be synced.             | Yes      | `./directory or file for sync`                            |
 
 ---
 
@@ -68,7 +68,7 @@ Store your sensitive information (e.g., `ACCESS_ID`, `SECRET_KEY`, `END_POINT`, 
    - `ACCESS_ID`: Your Huawei Cloud OBS Access Key ID.
    - `SECRET_KEY`: Your Huawei Cloud OBS Secret Key.
    - `END_POINT`: The endpoint URL of your OBS instance.
-   - `BUCKET`: The bucket path (e.g., `bucket-name`).
+   - `BUCKET`: The bucket name (e.g., `bucket-name`).
 
 ---
 
